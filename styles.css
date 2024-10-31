@@ -1,5 +1,56 @@
 body {
-    font-family: "Young" Serif, "Outfit";
-    text-align: center;
+    max-width: max-content;
+    margin: auto;
+    border-radius: 25px;
+    font-family: "Young-serif";
+    background-color: hsl(30, 54%, 90%);
+    
 }
 
+h1 {
+    font-family: "Young-serif";
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "Outfit";
+    font-weight: "400";
+    color: hsl(14, 45%, 36%);
+}
+
+h3 {
+    font-family: "Outfit";
+    font-weight: "400";
+    color: hsl(332, 51%, 32%);
+}
+
+p {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit";
+}
+
+li {
+    font-family: "Outfit";
+}
+
+.rectangle {
+    border-radius: 25px;
+    background: hsl(330, 100%, 98%);
+    padding: 20px;
+    width: 670px;
+    height: 150px;   
+}
+
+.rectangle2 {
+    position: absolute;
+    border-radius: 25px;
+    background: hsl(330, 100%, 98%);
+    padding: 20px;
+    width: 1440px;
+    height: 1440px;   
+}
+
+img {
+    border-radius: 25px;
+    width: 700px;
+}
