@@ -3,8 +3,9 @@ body {
     margin: auto;
     border-radius: 25px;
     font-family: "Young-serif";
+    line-height: 30px;
     background-color: hsl(30, 54%, 90%);
-    
+    align-items: column;
 }
 
 h1 {
@@ -13,32 +14,66 @@ h1 {
 }
 
 h2 {
-    font-family: "Outfit";
+    font-family: "Young-serif";
     font-weight: "400";
     color: hsl(14, 45%, 36%);
+    margin-left: 20px;
 }
 
 h3 {
     font-family: "Outfit";
     font-weight: "400";
     color: hsl(332, 51%, 32%);
+    margin-left: 20px;
 }
 
 p {
     color: hsl(30, 10%, 34%);
     font-family: "Outfit";
+    margin-left: 10px;
 }
 
 li {
     font-family: "Outfit";
+    color: hsl(30, 10%, 34%);
+}
+
+li span {
+    position: relative;
+    left: 30px;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+  }
+
+ol li:before {
+    color: hsl(14, 45%, 36%);
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+    font-weight: bold;
+}
+
+hr {
+    width: 95%;
+    opacity: 20%;
 }
 
 .rectangle {
     border-radius: 25px;
-    background: hsl(330, 100%, 98%);
+    background: hsl(328, 63%, 93%);
     padding: 20px;
     width: 670px;
-    height: 150px;   
+    height: 170px;   
 }
 
 .rectangle2 {
@@ -46,8 +81,27 @@ li {
     border-radius: 25px;
     background: hsl(330, 100%, 98%);
     padding: 20px;
-    width: 1440px;
-    height: 1440px;   
+    width: 710px;
+    height: 1650px;   
+    
+}
+
+.list {
+    padding-left: 20px;
+    margin-left: left;
+}
+
+.numbers {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+table {
+    width: 100%;
+    font-family: "Outfit";
+    color: hsl(30, 10%, 34%);
+    margin-left: 50px;
+    table-layout: fixed;
 }
 
 img {
